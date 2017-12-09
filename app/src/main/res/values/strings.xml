@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Score Keeper</string>
+    <string name="GOALS">GOALS</string>
+    <string name="OFFSIDES">OFFSIDES</string>
+    <string name="CORNERS">CORNER&#10;kICKS</string>
+    <string name="FOULS">FOULS</string>
+    <string name="TEAM_A">BARCELONA</string>
+    <string name="TEAM_B">REAL MADRID</string>
+    <string name="RESET_TEXT">RESET</string>
+
 </resources>

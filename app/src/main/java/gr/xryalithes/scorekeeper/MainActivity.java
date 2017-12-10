@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     int foulsBarca = 0;
     int foulsReal = 0;
 
+    //
     @Override
     public void onSaveInstanceState(Bundle savedData) {
         super.onSaveInstanceState(savedData);

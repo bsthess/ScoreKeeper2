@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="buttonsColumnMarginLeft">22dp</dimen>
+    <dimen name="buttonsColumnMarginRight">22dp</dimen>
+    <dimen name="buttonsMarginTop">18dp</dimen>
+    <dimen name="buttonMarginTopFirstRow">10dp</dimen>
+    <dimen name="scoreTextMarginTop">30dp</dimen>
+    <dimen name="textSizeScores">30sp</dimen>
+    <dimen name="buttonHeight">32dp</dimen>
+    <dimen name="land_buttonMargin">85dp</dimen>
+    <dimen name="land_buttonFirstRowMarginTop">5dp</dimen>
+    <dimen name="land_textButtonSize">12sp</dimen>
+    <dimen name="land_buttonMarginTop">12dp</dimen>
+    <dimen name="land_textSizeTeams">22sp</dimen>
+    <dimen name="land_buttonHeight">28dp</dimen>
+    <dimen name="textScoreViews">22sp</dimen>
+
+</resources>

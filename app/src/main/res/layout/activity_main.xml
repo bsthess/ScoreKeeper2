@@ -37,26 +37,23 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
             android:layout_weight="1"
             android:fontFamily="sans-serif-condensed"
             android:text="@string/TEAM_A"
             android:textAlignment="center"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/land_textSizeTeams"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:fontFamily="sans-serif-condensed"
             android:text="@string/TEAM_B"
             android:textAlignment="center"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/land_textSizeTeams"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -68,25 +65,25 @@
         <Button
             android:id="@+id/goals_barca_button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="22dp"
-            android:layout_marginRight="22dp"
-            android:layout_marginTop="40dp"
+            android:layout_height="@dimen/buttonHeight"
+            android:layout_marginLeft="@dimen/buttonsColumnMarginLeft"
+            android:layout_marginRight="@dimen/buttonsColumnMarginRight"
+            android:layout_marginTop="@dimen/buttonMarginTopFirstRow"
             android:background="@color/buttonsTeamAcolor"
             android:onClick="addGoalBarca"
             android:text="@string/GOALS"
-            android:textColor="@android:color/background_light"
+            android:textColor="@color/textColor"
             android:textSize="20sp" />
 
         <TextView
             android:id="@+id/goals_barca_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_alignTop="@id/goals_barca_button"
             android:layout_toLeftOf="@+id/vertical_line_1"
             android:text="0"
-            android:textColor="@android:color/background_light"
-            android:textSize="26sp" />
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSizeScores" />
 
         <ImageView
             android:id="@+id/vertical_line_1"
@@ -100,183 +97,177 @@
             android:id="@+id/goals_real_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_alignTop="@id/goals_barca_text"
             android:layout_toRightOf="@+id/vertical_line_1"
             android:text="0"
-            android:textColor="@android:color/background_light"
-            android:textSize="26sp" />
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSizeScores" />
 
         <Button
             android:id="@+id/goals_real_button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/buttonHeight"
             android:layout_alignParentRight="true"
-            android:layout_marginLeft="22dp"
-            android:layout_marginRight="22dp"
-            android:layout_marginTop="40dp"
+            android:layout_alignTop="@id/goals_barca_button"
+            android:layout_marginLeft="@dimen/buttonsColumnMarginLeft"
+            android:layout_marginRight="@dimen/buttonsColumnMarginRight"
             android:background="@color/buttonsTeamBcolor"
             android:onClick="addGoalReal"
             android:text="@string/GOALS"
-            android:textColor="@android:color/background_light"
+            android:textColor="@color/textColor"
             android:textSize="20sp" />
 
         <Button
             android:id="@+id/corners_barca_button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/buttonHeight"
+            android:layout_alignLeft="@id/goals_barca_button"
             android:layout_below="@+id/goals_barca_button"
-            android:layout_marginLeft="22dp"
-            android:layout_marginRight="22dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/buttonsMarginTop"
             android:background="@color/buttonsTeamAcolor"
             android:onClick="addCornerBarca"
             android:text="@string/CORNERS"
-            android:textColor="@android:color/background_light"
-            android:textSize="12sp" />
+            android:textColor="@color/textColor"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/offsides_barca_button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/buttonHeight"
+            android:layout_alignLeft="@id/goals_barca_button"
             android:layout_below="@+id/corners_barca_button"
-            android:layout_marginLeft="22dp"
-            android:layout_marginRight="22dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/buttonsMarginTop"
             android:background="@color/buttonsTeamAcolor"
             android:onClick="addOffsideBarca"
             android:text="@string/OFFSIDES"
-            android:textColor="@android:color/background_light"
+            android:textColor="@color/textColor"
             android:textSize="12sp" />
 
         <Button
             android:id="@+id/corners_real_button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/buttonHeight"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/goals_real_button"
-            android:layout_marginLeft="22dp"
-            android:layout_marginRight="22dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginLeft="@dimen/buttonsColumnMarginLeft"
+            android:layout_marginRight="@dimen/buttonsColumnMarginRight"
+            android:layout_marginTop="@dimen/buttonsMarginTop"
             android:background="@color/buttonsTeamBcolor"
             android:onClick="addCornerReal"
-            android:padding="0dp"
             android:text="@string/CORNERS"
-            android:textColor="@android:color/background_light"
-            android:textSize="12sp" />
+            android:textColor="@color/textColor"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/offsides_real_button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/buttonHeight"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/corners_barca_button"
-            android:layout_marginLeft="22dp"
-            android:layout_marginRight="22dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginLeft="@dimen/buttonsColumnMarginLeft"
+            android:layout_marginRight="@dimen/buttonsColumnMarginRight"
+            android:layout_marginTop="@dimen/buttonsMarginTop"
             android:background="@color/buttonsTeamBcolor"
             android:onClick="addOffsideReal"
-            android:padding="0dp"
             android:text="@string/OFFSIDES"
-            android:textColor="@android:color/background_light"
+            android:textColor="@color/textColor"
             android:textSize="12sp" />
 
         <Button
             android:id="@+id/fouls_barca_button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/buttonHeight"
+            android:layout_alignLeft="@id/goals_barca_button"
             android:layout_below="@+id/offsides_barca_button"
-            android:layout_marginLeft="22dp"
-            android:layout_marginRight="22dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/buttonsMarginTop"
             android:background="@color/buttonsTeamAcolor"
             android:onClick="addFoulBarca"
             android:padding="0dp"
             android:text="@string/FOULS"
-            android:textColor="@android:color/background_light"
+            android:textColor="@color/textColor"
             android:textSize="12sp" />
 
         <Button
             android:id="@+id/fouls_real_button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/buttonHeight"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/offsides_real_button"
-            android:layout_marginLeft="22dp"
-            android:layout_marginRight="22dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginLeft="@dimen/buttonsColumnMarginLeft"
+            android:layout_marginRight="@dimen/buttonsColumnMarginRight"
+            android:layout_marginTop="@dimen/buttonsMarginTop"
             android:background="@color/buttonsTeamBcolor"
             android:onClick="addFoulReal"
-            android:padding="0dp"
             android:text="@string/FOULS"
-            android:textColor="@android:color/background_light"
+            android:textColor="@color/textColor"
             android:textSize="12sp" />
 
         <TextView
             android:id="@+id/corners_barca_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/goals_barca_text"
+            android:layout_alignTop="@id/corners_barca_button"
             android:layout_below="@+id/goals_barca_text"
-            android:layout_marginLeft="22dp"
-            android:layout_marginTop="30dp"
             android:layout_toLeftOf="@+id/vertical_line_1"
             android:text="0"
-            android:textColor="@android:color/background_light"
-            android:textSize="26sp" />
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSizeScores" />
 
         <TextView
             android:id="@+id/corners_real_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignTop="@id/corners_barca_text"
             android:layout_below="@+id/goals_barca_text"
-            android:layout_marginTop="30dp"
             android:layout_toRightOf="@+id/vertical_line_1"
             android:text="0"
-            android:textColor="@android:color/background_light"
-            android:textSize="26sp" />
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSizeScores" />
 
         <TextView
             android:id="@+id/offsides_barca_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignTop="@id/offsides_barca_button"
             android:layout_below="@+id/corners_barca_text"
-            android:layout_marginTop="20dp"
             android:layout_toLeftOf="@+id/vertical_line_1"
             android:text="0"
-            android:textColor="@android:color/background_light"
-            android:textSize="26sp" />
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSizeScores" />
 
         <TextView
             android:id="@+id/offsides_real_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignTop="@id/offsides_barca_text"
             android:layout_below="@+id/corners_real_text"
-            android:layout_marginTop="20dp"
             android:layout_toRightOf="@+id/vertical_line_1"
             android:text="0"
-            android:textColor="@android:color/background_light"
-            android:textSize="26sp" />
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSizeScores" />
 
         <TextView
             android:id="@+id/fouls_barca_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignTop="@id/fouls_barca_button"
             android:layout_below="@+id/offsides_barca_text"
-            android:layout_marginTop="20dp"
             android:layout_toLeftOf="@+id/vertical_line_1"
             android:text="0"
-            android:textColor="@android:color/background_light"
-            android:textSize="26sp" />
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSizeScores" />
 
         <TextView
             android:id="@+id/fouls_real_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignTop="@id/fouls_barca_text"
             android:layout_below="@+id/offsides_barca_text"
-            android:layout_marginTop="20dp"
             android:layout_toRightOf="@+id/vertical_line_1"
             android:text="0"
-            android:textColor="@android:color/background_light"
-            android:textSize="26sp" />
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSizeScores" />
     </RelativeLayout>
 
     <LinearLayout
@@ -294,7 +285,7 @@
             android:onClick="resetAll"
             android:shadowColor="@android:color/background_dark"
             android:text="@string/RESET_TEXT"
-            android:textColor="@android:color/background_dark" />
+            android:textColor="@color/textResetColor" />
     </LinearLayout>
 
 </LinearLayout>
